@@ -68,6 +68,7 @@ pipeline {
                         ls
                         """
   }
+    }
   environment {
     CI_REPO_NAME = 'test-jenkins-pipeline'
     CI_REPO_BRANCH = 'master'
@@ -81,4 +82,5 @@ pipeline {
   triggers {
     cron('2 * * * *')
   }
+}
 }
